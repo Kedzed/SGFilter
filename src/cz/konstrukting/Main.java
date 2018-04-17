@@ -30,15 +30,16 @@ public class Main extends Application{
     //defining the axes
     final NumberAxis xAxis = new NumberAxis();
     final NumberAxis yAxis = new NumberAxis();
-    xAxis.setLabel("Number of Month");
+    xAxis.setLabel("Time[s]");
+    yAxis.setLabel("COF[-]");
     //creating the chart
     final LineChart<Number, Number> lineChart =
         new LineChart<Number, Number>(xAxis, yAxis);
 
-    lineChart.setTitle("Stock Monitoring, 2010");
+    lineChart.setTitle("Maly pepin Albumin+Globulin");
     //defining a series
     XYChart.Series series = new XYChart.Series();
-    series.setName("My portfolio");
+    series.setName("Seria 1");
     //populating the series with data
 
     for (int i = 0; i < A.data.length; i++)
